@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/admin', function () {
     return view('admin.index');
 });
 
@@ -21,4 +21,8 @@ Route::get('/login', function () {
 
 Route::get('/register', function () {
     return view('admin.admin_register');
+});
+
+Route::get('/', function () {
+    return view('index');
 });
