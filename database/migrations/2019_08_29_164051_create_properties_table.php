@@ -19,6 +19,7 @@ class CreatePropertiesTable extends Migration
             $table->unsignedBigInteger('author_id');
             $table->foreign('author_id')->references('id')->on('users')->onDelete('restrict');
             $table->string('name');
+            $table->decimal('price', 8, 2);
             $table->string('slug')->unique();
             $table->string('excerpt');
             $table->string('image');
