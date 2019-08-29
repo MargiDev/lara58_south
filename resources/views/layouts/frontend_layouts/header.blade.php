@@ -50,7 +50,7 @@
                                     <li><a href="about-us.html">About Us</a></li>
                                     <li><a href="#">Listings</a>
                                         <ul class="dropdown">
-                                            <li><a href="listings.html">Listings</a></li>
+                                            <li><a href="{{ url('/list') }}">Listings</a></li>
                                             <li><a href="single-listings.html">Single Listings</a></li>
                                         </ul>
                                     </li>
@@ -121,6 +121,7 @@
                         <a href="#" class="searchbtn"><i class="fa" aria-hidden="true"></i></a>
                     </div>
                     <!-- Nav End -->
+
                 </div>
             </nav>
         </div>

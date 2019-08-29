@@ -24,3 +24,7 @@
     <div id="preloader">
         <div class="south-load"></div>
     </div>
+    
+    <!-- ##### Header Area Start ##### -->
+    @include('layouts.frontend_layouts.header')
+    <!-- ##### Header Area End ##### -->
