@@ -50,7 +50,7 @@
                                     <li><a href="{{ url('/about_us') }}">About Us</a></li>
                                     <li><a href="#">Listings</a>
                                         <ul class="dropdown">
-                                            <li><a href="{{ url('/list') }}">Properties List</a></li>
+                                            <li><a href="{{ route('properties.show') }}">Properties List</a></li>
                                             <li><a href="{{ url('/single') }}">Single Property</a></li>
                                         </ul>
                                     </li>

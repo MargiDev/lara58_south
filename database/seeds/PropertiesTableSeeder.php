@@ -24,11 +24,11 @@ class PropertiesTableSeeder extends Seeder
         $date  = Carbon::now();
         $year  = $date->year;
         $month = $date->month;
-        $day   = $date->subDays(15)->day;
+        $day   = $date->subDays(20)->day;
         $hour  = $date->subHours(1)->hour;
         $date  = Carbon::create($year, $month, $day, $hour);
 
-        for ($i=1; $i <= 15 ; $i++) {
+        for ($i=1; $i <= 20 ; $i++) {
           $image       = 'feature'.rand(1, 9).'.jpg';
           $size        = rand(15,200).'m x '.rand(15,200).'m';
 
@@ -37,7 +37,7 @@ class PropertiesTableSeeder extends Seeder
           $props[] = [
               'code'       => 'R-'.rand(10000, 99999).'-prop',
               'author_id'  => rand(1, 3),
-              'name'       => $faker->sentence(rand(6, 10)),
+              'name'       => $faker->words(rand(6, 7), true),
               'price'      => rand(20000, 500000),
               'slug'       => $faker->slug(),
               'excerpt'    => $faker->text(rand(200, 250)),

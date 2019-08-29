@@ -23,13 +23,15 @@ Route::get('/register', function () {
     return view('admin.admin_register');
 });
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [
+  'uses' => 'PropertyController@index',
+  'as' => 'property.index',
+]);
 
-Route::get('/list', function () {
-    return view('frontend.properties');
-});
+Route::get('/property/show', [
+  'uses' => 'PropertyController@property',
+  'as' => 'properties.show',
+]);
 
 Route::get('/single', function () {
     return view('frontend.property');
