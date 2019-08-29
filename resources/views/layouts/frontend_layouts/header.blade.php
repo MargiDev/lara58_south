@@ -43,21 +43,21 @@
                     <div class="classynav">
                         <ul>
                             <li><a href="{{ url('/') }}">Home</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="{{ url('/about_us') }}">About Us</a></li>
                             <li><a href="#">Our servies</a>
                                 <ul class="dropdown">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="{{ url('/about_us') }}">About Us</a></li>
                                     <li><a href="#">Listings</a>
                                         <ul class="dropdown">
-                                            <li><a href="{{ url('/list') }}">Listings</a></li>
-                                            <li><a href="single-listings.html">Single Listings</a></li>
+                                            <li><a href="{{ url('/list') }}">Properties List</a></li>
+                                            <li><a href="{{ url('/single') }}">Single Property</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Blog</a>
                                         <ul class="dropdown">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="single-blog.html">Single Blog</a></li>
+                                            <li><a href="{{ url('/news_events') }}">News &amp; Event List</a></li>
+                                            <li><a href="{{ url('/news_event') }}">Single</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
@@ -102,11 +102,11 @@
                             </li>
                             <li><a href="blog.html">News &amp; Events</a>
                                 <ul class="dropdown">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="single-blog.html">Single Blog</a></li>
+                                    <li><a href="{{ url('/news_events') }}">News &amp; Event List</a></li>
+                                    <li><a href="{{ url('/news_event') }}">Single</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{ url('/contact') }}">Contact</a></li>
                         </ul>
 
                         <!-- Search Form -->

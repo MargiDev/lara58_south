@@ -28,5 +28,25 @@ Route::get('/', function () {
 });
 
 Route::get('/list', function () {
-    return view('frontend.properties_list');
+    return view('frontend.properties');
+});
+
+Route::get('/single', function () {
+    return view('frontend.property');
+});
+
+Route::get('/news_events', function () {
+    return view('frontend.news_events');
+});
+
+Route::get('/news_event', function () {
+    return view('frontend.news_event');
+});
+
+Route::get('/about_us', function () {
+    return view('frontend.about_us');
+});
+
+Route::get('/contact', function () {
+    return view('frontend.contact');
 });
